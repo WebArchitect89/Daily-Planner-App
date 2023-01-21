@@ -35,3 +35,10 @@
 // Display current date onto scheduler
 var today = moment().format('dddd, MMMM Do');
 $("#currentDay").text(today);
+
+//Buttons will save user input to local storage. Additionally if there are any saved inputs, they will display in the textarea.
+$(".b9").on("click",  function(){
+    var inputText = $(".e9").val();
+    localStorage.setItem("09:00",inputText);
+});
+$(".e9").val(localStorage.getItem("09:00"));
