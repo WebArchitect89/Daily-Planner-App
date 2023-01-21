@@ -30,18 +30,15 @@ $("#currentDay").text(today);
 var timeNow = moment().hour();
 
 var colorBasedOnHours = document.querySelectorAll("textarea");
-
-console.log(colorBasedOnHours)
-
 for(var i =0; i<colorBasedOnHours.length; i++){
-    console.log(colorBasedOnHours[i].id)
-    if(colorBasedOnHours[i].id === timeNow){
-        $("col-8").addClass("present");
-    } else if (colorBasedOnHours[i].id>timeNow){
-        $("col-8").addClass("future");
-    } else  $("col-8").addClass("past");
-}
+ var integer =  parseInt(colorBasedOnHours[i].id)
+    if(integer === timeNow){
+        $(".col-8").addClass("present");
+    } else if (integer>timeNow){
+        $(".col-8").addClass("future");
+    } else  $(".col-8").addClass("past");
 
+}
 
 //Buttons will save user input to local storage. Additionally if there are any saved inputs, they will display in the textarea.
 $(".b9").on("click",  function(){
@@ -97,4 +94,3 @@ $(".b5").on("click",  function(){
     localStorage.setItem("5:00",inputText);
 });
 $(".e5").val(localStorage.getItem("5:00"));
-
