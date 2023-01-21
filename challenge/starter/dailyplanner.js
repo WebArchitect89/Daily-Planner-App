@@ -35,8 +35,8 @@ console.log(colorBasedOnHours)
 
 for(var i =0; i<colorBasedOnHours.length; i++){
     console.log(colorBasedOnHours[i])
-    if(console.log[i]>timeNow){
-
+    if(console.log[i]===timeNow){
+        $("col-8").addClass("present");
     }
 }
 
