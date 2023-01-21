@@ -34,10 +34,12 @@ var colorBasedOnHours = document.querySelectorAll("textarea");
 console.log(colorBasedOnHours)
 
 for(var i =0; i<colorBasedOnHours.length; i++){
-    console.log(colorBasedOnHours[i])
-    if(console.log[i].id===timeNow){
+    console.log(colorBasedOnHours[i].id)
+    if(colorBasedOnHours[i].id === timeNow){
         $("col-8").addClass("present");
-    }
+    } else if (colorBasedOnHours[i].id>timeNow){
+        $("col-8").addClass("future");
+    } else  $("col-8").addClass("past");
 }
 
 
