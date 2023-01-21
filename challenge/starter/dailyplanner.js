@@ -26,6 +26,19 @@
 var today = moment().format('dddd, MMMM Do');
 $("#currentDay").text(today);
 
+//Display the colors based on past present and future
+var timeNow = moment().hour();
+
+var colorBasedOnHours = document.querySelectorAll("textarea");
+
+// console.log(colorBasedOnHours)
+
+for(var i =0; i<colorBasedOnHours; i++){
+    console.log(colorBasedOnHours[i])
+}
+
+
+
 //Buttons will save user input to local storage. Additionally if there are any saved inputs, they will display in the textarea.
 $(".b9").on("click",  function(){
     var inputText = $(".e9").val();
@@ -80,3 +93,4 @@ $(".b5").on("click",  function(){
     localStorage.setItem("5:00",inputText);
 });
 $(".e5").val(localStorage.getItem("5:00"));
+
