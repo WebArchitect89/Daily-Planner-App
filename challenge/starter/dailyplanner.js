@@ -4,8 +4,6 @@
 
 // Present timeblocks for standard business hours when the user scrolls down.
 
-    // create li for time blocks with jQuery 
-
 // Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 
 // Color using logic  check out Activities 7.1.3 and 7.1.4 - attach functionality to events. Also, use the .css() method.
@@ -20,17 +18,9 @@
 
 // Persist events between refreshes of a page
 
-//Prevent Default
-
 // The following animation demonstrates the application functionality:
 
 // A user clicks on slots on the color-coded calendar and edits the events.
-
-
-
-
-//Check the links in HTML
-
 
 // Display current date onto scheduler
 var today = moment().format('dddd, MMMM Do');

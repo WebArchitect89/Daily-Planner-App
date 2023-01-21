@@ -49,12 +49,6 @@ color: #ff6961;
   border-top: 1px solid white;
 }
 
-/* please check */
-.col-md-8{
-  padding-right: 0px;
-  padding-left: 0px;
- 
-}
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -89,4 +83,6 @@ color: #ff6961;
   font-size: 100px;
   transition: all 0.3s ease-in-out;
 }
+
+.saveBtn:hover {background-color: #3e8e41}
 
