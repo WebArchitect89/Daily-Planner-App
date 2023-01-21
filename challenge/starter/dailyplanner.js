@@ -31,10 +31,13 @@ var timeNow = moment().hour();
 
 var colorBasedOnHours = document.querySelectorAll("textarea");
 
-// console.log(colorBasedOnHours)
+console.log(colorBasedOnHours)
 
-for(var i =0; i<colorBasedOnHours; i++){
+for(var i =0; i<colorBasedOnHours.length; i++){
     console.log(colorBasedOnHours[i])
+    if(console.log[i]>timeNow){
+
+    }
 }
 
 
