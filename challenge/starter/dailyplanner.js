@@ -35,11 +35,10 @@ console.log(colorBasedOnHours)
 
 for(var i =0; i<colorBasedOnHours.length; i++){
     console.log(colorBasedOnHours[i])
-    if(console.log[i]===timeNow){
+    if(console.log[i].id===timeNow){
         $("col-8").addClass("present");
     }
 }
-
 
 
 //Buttons will save user input to local storage. Additionally if there are any saved inputs, they will display in the textarea.
