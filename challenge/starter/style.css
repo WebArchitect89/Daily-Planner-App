@@ -13,7 +13,15 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
-  background-color: rgb(198, 214, 202);
+  background-color: rgb(196, 196, 196);
+
+}
+
+/*Current Day*/
+
+#currentDay{
+  font-weight:bolder;
+  color:  #338adc;
 }
 
 .jumbotron {
@@ -39,6 +47,11 @@ textarea {
   border-top: 1px solid white;
 }
 
+/* please check */
+.col-md-8{
+  padding-right: 0px;
+  padding-left: 0px;
+}
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -64,11 +77,12 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #06AED5;
   color: white;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  color:#77dd77;
+  font-size: 100px;
   transition: all 0.3s ease-in-out;
 }
