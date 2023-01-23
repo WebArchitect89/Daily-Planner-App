@@ -22,16 +22,6 @@
 
 // A user clicks on slots on the color-coded calendar and edits the events.
 
-
-// Follow these steps:
-// 1. If you notice on each of your time blocks it is wrapped with a div called 'row'. Lets use this to loop over each time block :slightly_smiling_face: $('.time-block').each(function () {}
-// 2. Side note: lets add an id to each of our time blocks like this:  id="hour-9" and so on :slightly_smiling_face:
-// 3. Inside of this function we are going to do 'something' for each time block. Lets first create a variable that will hold the block hour so we can compare it to the current hour later.  var blockHour = parseInt($(this).attr('id').split('-')[1]); (Be sure to check out .split and .attr)
-// 4. Now using the variable you already created called timeNow we can compare the two in our condition of our if statement like so: if (blockHour < currentHour) {}
-// 5. then the else if condition would be: else if (blockHour === currentHour) {}
-// 6. and then make sure and close out your if else. (edited) 
-
-
 // Display current date onto scheduler
 var today = moment().format('dddd, MMMM Do');
 $("#currentDay").text(today);
@@ -40,22 +30,24 @@ $("#currentDay").text(today);
 var currentTime = moment().hour();
 
 
-var timeArray = [];
-$(".time-block").each(function () { timeArray.push(this.id); });
-for (var i = 0; i < timeArray.length; i++) {
-    var integer = parseInt(timeArray[i]);
-    console.log(integer)
-
-    if (integer === currentTime) {
-        $("textarea").addClass("present");
-    } else if (integer > currentTime) {
-        $("textarea").addClass("future");
-    } else $("textarea").addClass("past");
-}
 
 
+$(".time-block").each(function() {
+    var currHour = parseInt($(this).attr("id"));
 
-// }
+
+    if (currHour > currentTime) {
+        $(this).addClass("future");
+    } else if (currHour === currentTime) {
+        $(this).addClass("present");
+    } else {
+        $(this).addClass("past");
+    }
+});
+
+
+console.log(this); //each time-block
+
 //Buttons will save user input to local storage. Additionally if there are any saved inputs, they will display in the textarea.
 $(".b9").on("click", function () {
     var inputText = $(".e9").val();
