@@ -20,11 +20,11 @@ The application is a simple calendar application that allows a user to save even
  
 * Color-code each timeblock based on past, present, and future when the timeblock is viewed.
  
-* Allow a user to enter an event when they click a timeblock
+* Allow a user to enter an event when they click a timeblock.
 
 * Save the event in local storage when the save button is clicked in that timeblock.
 
-* Persist events between refreshes of a page
+* Persist events between refreshes of a page.
 
 ## Usage:
 
