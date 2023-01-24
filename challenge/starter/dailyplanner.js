@@ -22,6 +22,10 @@
 
 // A user clicks on slots on the color-coded calendar and edits the events.
 
+
+
+
+
 // Display current date onto scheduler
 var today = moment().format('dddd, MMMM Do');
 $("#currentDay").text(today);
